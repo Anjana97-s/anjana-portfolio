@@ -1,6 +1,8 @@
+<body>
 <!-- ======= Mobile nav toggle button ======= -->
-<!-- <i class="bi bi-list mobile-nav-toggle d-xl-none"></i> -->
-<i class="fa-solid fa-bars mobile-nav-toggle d-xl-none"></i>
+<i (click) = "mobileViewToggle($event)"  class="fa-solid fa-bars mobile-nav-toggle d-xl-none" ></i>
+
+
 <!-- ======= Header ======= -->
 <header id="header">
   <div class="d-flex flex-column">
@@ -18,25 +20,25 @@
     <nav id="navbar" class="nav-menu navbar">
       <ul>
         <li>
-          <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="" class="nav-link scrollto"><i class="fa-solid fa-house-chimney"></i>
+          <a routerLinkActive="active" (click) = "mobileViewToggle($event)" [routerLinkActiveOptions]="{exact: true}" routerLink="" class="nav-link scrollto"><i class="fa-solid fa-house-chimney"></i>
             <span>Home</span></a>
         </li>
         <li>
-          <a routerLinkActive="active"  routerLink="/about" class="nav-link scrollto"><i
+          <a routerLinkActive="active" (click) = "mobileViewToggle($event)" routerLink="/about" class="nav-link scrollto"><i
               class="fa-solid fa-circle-info"></i> <span>About</span></a>
         </li>
         <li>
-          <a  routerLinkActive="active" routerLink="/resume" class="nav-link scrollto" ><i
+          <a  routerLinkActive="active" (click) = "mobileViewToggle($event)" routerLink="/resume" class="nav-link scrollto" ><i
               class="fa-regular fa-id-badge"></i> <span>Resume</span></a>
         </li>
         <li>
-          <a  routerLinkActive="active" routerLink="/skills" class="nav-link scrollto" >
+          <a  routerLinkActive="active" (click) = "mobileViewToggle($event)" routerLink="/skills" class="nav-link scrollto" >
             <i
               class="fa-solid fa-laptop-code"></i> <span>Skills</span></a>
         </li>
 
         <li >
-          <a routerLinkActive="active" routerLink="/contact" class="nav-link scrollto">
+          <a routerLinkActive="active" (click) = "mobileViewToggle($event)" routerLink="/contact" class="nav-link scrollto">
             <i class="fa-solid fa-address-book"></i>
             <span>Contact</span></a>
         </li>
@@ -58,8 +60,10 @@
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-      Designed by <a href="#">Me</a>
+      Designed with &hearts; by me:)
     </div>
   </div>
 </footer>
 <!-- End  Footer -->
+
+</body>
