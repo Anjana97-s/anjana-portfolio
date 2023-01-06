@@ -240,6 +240,7 @@ h6 {
 }
 
 #hero .hero-container {
+  margin-left: 35%;
   position: relative;
   z-index: 2;
   min-width: 300px;
@@ -464,6 +465,7 @@ section {
 .resume
 {
   margin-left: 23%;
+  /* overflow-y: scroll; */
 }
 .resume .resume-title {
   font-size: 26px;
@@ -1107,10 +1109,25 @@ section {
 }
 
 @media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
+  #footer
+  {
+    display: none;
+  }
+
+  #hero,#about,#resume,#skills,#contact
+  {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .skills-content
+  {
+    padding-bottom: 80%;
+  }
+  .hero-container
+  {
+    margin-left: 20%;
   }
 }
 
