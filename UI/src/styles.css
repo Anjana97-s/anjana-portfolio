@@ -1,6 +1,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  text-align: justify;
+  text-justify: auto;
 }
 
 a {
@@ -1119,6 +1121,11 @@ section {
     margin: auto;
     width: 100%;
     padding: 10px;
+  }
+
+  #if
+  {
+    width: auto;
   }
 
   .skills-content
